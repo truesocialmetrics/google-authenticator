@@ -3,6 +3,7 @@
 namespace GoogleAuthenticatorTest;
 
 use GoogleAuthenticator\GoogleAuthenticator;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Override time() in current namespace for testing
@@ -15,7 +16,7 @@ function time()
     return GoogleAuthenticatorTest::$now ?: time();
 }
 
-class GoogleAuthenticatorTest extends \PHPUnit_Framework_TestCase
+class GoogleAuthenticatorTest extends TestCase
 {
     /** @var $googleAuthenticator GoogleAuthenticator */
     protected $googleAuthenticator;
