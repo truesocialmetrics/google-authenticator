@@ -11,7 +11,7 @@
 namespace GoogleAuthenticator;
 
 use Base32\Base32;
-use Zend\Math\Rand;
+use Laminas\Math\Rand;
 
 class GoogleAuthenticator
 {

@@ -19,9 +19,9 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.4",
         "christian-riesen/base32": "*",
-        "zendframework/zend-math": "*"
+        "laminas/laminas-math": "*"
     },
     "autoload": {
         "psr-4": {

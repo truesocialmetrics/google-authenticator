@@ -28,12 +28,12 @@ class GoogleAuthenticatorTest extends TestCase
      */
     public static $now;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->googleAuthenticator = new GoogleAuthenticator();
     }
 
-    public function codeProvider()
+    public function codeProvider() : array
     {
         // Secret, time, code
         return array(
@@ -60,7 +60,7 @@ class GoogleAuthenticatorTest extends TestCase
     /**
      * @dataProvider codeProvider
      */
-    public function testgetCodeReturnsCorrectValues($secret, $time, $code)
+    public function testgetCodeReturnsCorrectValues(string $secret, int $time, string $code)
     {
         static::$now = $time;
 
